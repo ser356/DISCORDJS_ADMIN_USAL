@@ -1,0 +1,9 @@
+[Unit]
+Description="Service that executes Discord Bot at Boot."
+After=network.target
+[Service]
+Type=simple
+ExecStart=/usr/bin/mi_script_bash.sh start
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,8 @@
+[Unit]
+Description="Run Discord Bot at shutdown"
+DefaultDependencies=no
+Before=shutdown.target
+[Service]
+ExecStart=/usr/bin/mi_script_bash.sh stop
+[Install]
+WantedBy=shutdown.target
